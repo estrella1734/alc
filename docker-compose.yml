@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres_container
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER:          # 設定 PostgreSQL 用戶
+      POSTGRES_PASSWORD:  # 設定 PostgreSQL 密碼
+      POSTGRES_DB: alc              # 設定預設數據庫名稱
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # 持久化數據
+
+volumes:
+  postgres_data: # 定義一個數據卷
