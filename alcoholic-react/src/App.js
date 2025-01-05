@@ -60,7 +60,7 @@ function App() {
               textAlign: 'center', // 文字置中
             }}
           >
-            申野酒品團購
+            ALCOHOLIC - 酒品團購
           </Typography>
           <IconButton color="inherit">
             <ShoppingCartIcon />
